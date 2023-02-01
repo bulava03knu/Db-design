@@ -1,0 +1,2 @@
+db.users.insert({"name": "Tom"})
+db.users.find()
