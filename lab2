@@ -1,2 +1,22 @@
-db.users.insertMany([{"trade organization": "aliquip ex",  "address": "2400 Terra Street",  "director": { "first name": "Marcello", "last name": "Hart" }, "tax number": 27936, "suppliers": [ "officia culpa velit qui" ]}, {"trade organization": "irure esse cillum minim magna", "address": "2028 Sunny Day Drive", "director": {"first name": "Christopher", "last name": "Mason"}, "tax number": 74379, "suppliers": [ "proident", "ad voluptate quis tempor",     "tempor labore occaecat elit",     "anim", "qui nulla sit" ]}, {"trade organization": "Excepteur", "address": "598 Mulberry Lane", "director": {"first name": "Miliana",     "last name": "Shaw"}, "tax number": 40972,   "suppliers": [ "Ut sunt", "labore nostrud ex deserunt", "nostrud" ]}]) 
+db.users.insertMany( [
+{
+"trade organization": "aliquip ex", 
+ 	"address": "2400 Terra Street", 
+"director": { "first name": "Marcello", "last name": "Hart" },
+"tax number": 27936, "suppliers": [ "officia culpa velit qui" ]
+},
+ {
+"trade organization": "irure esse cillum minim magna",
+"address": "2028 Sunny Day Drive",
+"director": {"first name": "Christopher", "last name": "Mason"},
+"tax number": 74379, "suppliers": [ "proident", "ad voluptate quis tempor",  "tempor labore occaecat elit",     "anim", "qui nulla sit" ]
+},
+ {
+"trade organization": "Excepteur",
+"address": "598 Mulberry Lane",
+"director": {"first name": "Miliana",     "last name": "Shaw"},
+"tax number": 40972,  
+"suppliers": [ "Ut sunt", "labore nostrud ex deserunt", "nostrud" ]
+} ] )
+
 db.users.find().pretty()
