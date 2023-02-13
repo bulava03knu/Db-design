@@ -1,0 +1,9 @@
+db.students.count({"cathedra": "Кафедра1"})
+
+db.students.find({"age": {$gte: 20}})
+
+
+db.students.find({"name.first": "Роман", "age": {$eq: 22}})
+
+db.students.find({"languages": {$regex: "португальська"}})
+(db.students.find({"languages": {$regex: "португальська"}}, {"languages": 1}))
