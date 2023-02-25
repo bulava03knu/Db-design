@@ -162,7 +162,6 @@ db.students.findOne()
  
 
 db.students.find().skip(9).limit(1) 
-??? 
 
  
 
