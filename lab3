@@ -65,7 +65,7 @@ db.students.insertMany([
 "cathedra": "Кафедра3", 
 "group": "Група7", 
 "languages": [ "українська", "англійська", "німецька"], 
-"year of entry": 2016, 
+"year of entry": 2018, 
 "average mark": 64
 },
 {
@@ -74,7 +74,7 @@ db.students.insertMany([
 "cathedra": "Кафедра4", 
 "group": "Група8", 
 "languages": [ "українська", "англійська", "німецька"], 
-"year of entry": 2016, 
+"year of entry": 2017, 
 "average mark": 93
 },
 {
