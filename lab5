@@ -30,3 +30,10 @@ db.students.updateOne({"year of entry": 2022}, {$pullAll: {"languages": ["фра
 
 db.students.deleteOne({"year of entry": 2022})
 db.students.deleteMany({"year of entry": 2022})
+db.students.deleteMany({"cathedra": /Кафедра1/})
+db.students.deleteOne({"average mark": {$lt: 90}})
+db.students.deleteMany({})
+
+db.students.drop()
+
+db.dropDatabase()
