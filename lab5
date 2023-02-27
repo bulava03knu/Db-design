@@ -1,0 +1,2 @@
+db.students.replaceOne({"year of entry": 2022}, {"name": {"first": "Наталя", "last": "Сосновий"}, "age": 16, "cathedra": "Кафедра3", "group": "Група4", "languages": ["українська", "англійська"], "year of entry": 2022})
+
