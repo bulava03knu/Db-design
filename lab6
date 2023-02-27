@@ -106,75 +106,84 @@ cathedra2 = db.cathedras.insertOne({"name": "Кафедра2", "groups": [{"$ref
 cathedra3 = db.cathedras.insertOne({"name": "Кафедра3", "groups": [{"$ref": "groups", "$id": group4.insertedId}, {"$ref": "groups", "$id": group7.insertedId}], "subjects": [{"$ref": "subjects", "$id": subject47.insertedId}, {"$ref": "subjects", "$id": subject48.insertedId}, {"$ref": "subjects", "$id": subject49.insertedId}, {"$ref": "subjects", "$id": subject50.insertedId}, {"$ref": "subjects", "$id": subject51.insertedId}, {"$ref": "subjects", "$id": subject52.insertedId}, {"$ref": "subjects", "$id": subject53.insertedId}, {"$ref": "subjects", "$id": subject54.insertedId}, {"$ref": "subjects", "$id": subject55.insertedId}, {"$ref": "subjects", "$id": subject56.insertedId}, {"$ref": "subjects", "$id": subject57.insertedId}, {"$ref": "subjects", "$id": subject58.insertedId}, {"$ref": "subjects", "$id": subject59.insertedId}, {"$ref": "subjects", "$id": subject60.insertedId}, {"$ref": "subjects", "$id": subject61.insertedId}, {"$ref": "subjects", "$id": subject62.insertedId}, {"$ref": "subjects", "$id": subject63.insertedId}, {"$ref": "subjects", "$id": subject64.insertedId}, {"$ref": "subjects", "$id": subject65.insertedId}, {"$ref": "subjects", "$id": subject66.insertedId}, {"$ref": "subjects", "$id": subject67.insertedId}, {"$ref": "subjects", "$id": subject68.insertedId}, {"$ref": "subjects", "$id": subject69.insertedId}, {"$ref": "subjects", "$id": subject70.insertedId}]})
 cathedra4 = db.cathedras.insertOne({"name": "Кафедра4", "groups": [{"$ref": "groups", "$id": group8.insertedId},], "subjects": [{"$ref": "subjects", "$id": subject71.insertedId}, {"$ref": "subjects", "$id": subject72.insertedId}, {"$ref": "subjects", "$id": subject73.insertedId}, {"$ref": "subjects", "$id": subject74.insertedId}, {"$ref": "subjects", "$id": subject75.insertedId}, {"$ref": "subjects", "$id": subject76.insertedId}, {"$ref": "subjects", "$id": subject77.insertedId}, {"$ref": "subjects", "$id": subject78.insertedId}, {"$ref": "subjects", "$id": subject79.insertedId}, {"$ref": "subjects", "$id": subject80.insertedId}, {"$ref": "subjects", "$id": subject81.insertedId}, {"$ref": "subjects", "$id": subject82.insertedId}, {"$ref": "subjects", "$id": subject83.insertedId}, {"$ref": "subjects", "$id": subject84.insertedId}, {"$ref": "subjects", "$id": subject85.insertedId}, {"$ref": "subjects", "$id": subject86.insertedId}, {"$ref": "subjects", "$id": subject87.insertedId}, {"$ref": "subjects", "$id": subject88.insertedId}, {"$ref": "subjects", "$id": subject89.insertedId}, {"$ref": "subjects", "$id": subject90.insertedId}, {"$ref": "subjects", "$id": subject91.insertedId}, {"$ref": "subjects", "$id": subject92.insertedId}]})
 
-db.students.insertMany([
+student1 = db.students.insertOne(
 {
 "name": {"first": "Єгор", "last": "Глобенко"},
 "age": 19,
 "group": {"$ref": "groups", "$id": group1.insertedId},
 "languages": [ "українська", "англійська"],
 "year of entry": 2021
-},
+})
+student2 = db.students.insertOne(
 {
 "name": {"first": "Богдан", "last": "Короткевич"},
 "age": 20,
 "group": {"$ref": "groups", "$id": group2.insertedId},
 "languages": [ "українська", "англійська", "іспанська"],
 "year of entry": 2020
-},
+})
+student3 = db.students.insertOne(
 {
 "name": {"first": "Назарій", "last": "Урбанський"},
 "age": 23,
 "group": {"$ref": "groups", "$id": group3.insertedId},
 "languages": [ "українська", "англійська", "португальська"],
 "year of entry": 2017
-},
+})
+student4 = db.students.insertOne(
 {
 "name": {"first": "Наталя", "last": "Сосновий"},
 "age": 16,
 "group": {"$ref": "groups", "$id": group4.insertedId},
 "languages": [ "українська", "англійська", "французька"],
 "year of entry": 2022
-},
+})
+student5 = db.students.insertOne(
 {
 "name": {"first": "Роман", "last": "Дідух"},
 "age": 22,
 "group": {"$ref": "groups", "$id": group5.insertedId},
 "languages": [ "українська", "англійська", "іспанська"],
 "year of entry": 2018
-},
+})
+student6 = db.students.insertOne(
 {
 "name": {"first": "Тетяна", "last": "Бобошко"},
 "age": 17, 
 "group": {"$ref": "groups", "$id": group6.insertedId}, 
 "languages": [ "українська", "англійська", "французька"], 
 "year of entry": 2022
-},
+})
+student7 = db.students.insertOne(
 {
 "name": {"first": "Йосип", "last": "Шкляренко"}, 
 "age": 18, 
 "group": {"$ref": "groups", "$id": group6.insertedId},
 "languages": [ "українська", "англійська"], 
 "year of entry": 2022
-}, 
+})
+Student8 = db.students.insertOne(
 {
 "name": {"first": "Дмитро", "last": "Микуляк"},
 "age": 25, 
 "group": {"$ref": "groups", "$id": group7.insertedId},
 "languages": [ "українська", "англійська", "німецька"], 
 "year of entry": 2016
-},
+})
+student9 = db.students.insertOne(
 {
 "name": {"first": "Христя", "last": "Денисюк"}, 
 "age": 24, 
 "group": {"$ref": "groups", "$id": group8.insertedId},
 "languages": [ "українська", "англійська", "німецька"], 
 "year of entry": 2016
-},
+})
+Student10 = db.students.insertOne(
 {
 "name": {"first": "Уляна", "last": "Говера"}, 
 "age": 21, 
 "group": {"$ref": "groups", "$id": group9.insertedId},
 "languages": [ "українська", "англійська", "іспанська"], 
 "year of entry": 2019
-} ])
+})
 
