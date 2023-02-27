@@ -178,7 +178,7 @@ student9 = db.students.insertOne(
 "languages": [ "українська", "англійська", "німецька"], 
 "year of entry": 2016
 })
-Student10 = db.students.insertOne(
+student10 = db.students.insertOne(
 {
 "name": {"first": "Уляна", "last": "Говера"}, 
 "age": 21, 
