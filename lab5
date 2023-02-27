@@ -11,3 +11,11 @@ db.students.updateMany({"year of entry": 2022}, {$unset: {"average mark": 1}})
 
 db.students.updateOne({"year of entry": 2022}, {$unset: {"age": 1, "cathedra": 1}})
 
+db.students.updateOne({"year of entry": 2022}, {$push: {"languages": "французька"}})
+db.students.updateMany({"year of entry": 2022}, {$push: {"languages": "французька"}})
+db.students.updateMany({"year of entry": 2022}, {$push: {"languages": {$each: ["італійська", "польська", "румунська"]}}})
+db.students.updateMany({"year of entry": 2022}, {$push: {"languages": {$each: ["українська", "англійська", "французька"], $position:0, $slice:3}}})
+
+db.students.updateOne({"year of entry": 2022}, {$addToSet: {"languages": "англійська"}})
+db.students.updateOne({"year of entry": 2022}, {$addToSet: {"languages": "італійська"}})
+
