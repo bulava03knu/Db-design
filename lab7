@@ -1,0 +1,12 @@
+db.cathedras.createIndex({"name": 1}, {"unique": true})
+db.cathedras.getIndexes()
+
+db.groups.createIndex({"name": 1}, {"unique": true})
+db.groups.getIndexes()
+
+db.students.createIndex({"name": 1}, {"unique": false})
+db.students.getIndexes()
+
+db.subjects.createIndex({"name": 1}, {"unique": true})
+db.subjects.getIndexes()
+
