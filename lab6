@@ -25,10 +25,10 @@ subject13 = db.subjects.insertOne({"name": "Предмет13", "study_program": 
 subject14 = db.subjects.insertOne({"name": "Предмет14", "study_program": {"$ref": "study_programs", "$id": study_program4.insertedId}, "control": "Екзамен"})
 subject15 = db.subjects.insertOne({"name": "Предмет15", "study_program": {"$ref": "study_programs", "$id": study_program4.insertedId}, "control": "Екзамен"})
 subject16 = db.subjects.insertOne({"name": "Предмет16", "study_program": {"$ref": "study_programs", "$id": study_program4.insertedId}, "control": "Залік"})
-subject17 = db.subjects.insertOne({"name": "Предмет11", "study_program": {"$ref": "study_programs", "$id": study_program5.insertedId}, "control": "Екзамен"})
-subject18 = db.subjects.insertOne({"name": "Предмет12", "study_program": {"$ref": "study_programs", "$id": study_program5.insertedId}, "control": "Екзамен"})
-subject19 = db.subjects.insertOne({"name": "Предмет13", "study_program": {"$ref": "study_programs", "$id": study_program5.insertedId}, "control": "Екзамен"})
-subject20 = db.subjects.insertOne({"name": "Предмет14", "study_program": {"$ref": "study_programs", "$id": study_program5.insertedId}, "control": "Залік"})
+subject17 = db.subjects.insertOne({"name": "Предмет17", "study_program": {"$ref": "study_programs", "$id": study_program5.insertedId}, "control": "Екзамен"})
+subject18 = db.subjects.insertOne({"name": "Предмет18", "study_program": {"$ref": "study_programs", "$id": study_program5.insertedId}, "control": "Екзамен"})
+subject19 = db.subjects.insertOne({"name": "Предмет19", "study_program": {"$ref": "study_programs", "$id": study_program5.insertedId}, "control": "Екзамен"})
+subject20 = db.subjects.insertOne({"name": "Предмет20", "study_program": {"$ref": "study_programs", "$id": study_program5.insertedId}, "control": "Залік"})
 
 db.students.insertMany([{"name": {"first": "Єгор", "last": "Глобенко"}, "age": 19, "cathedra": {"$ref": "cathedras", "$id": cathedra1.insertedId}, "group": "Група1", "languages": [ "українська", "англійська"], "year of entry": 2021, "study_program": {"$ref": "study_programs", "$id": study_program1.insertedId}, "grades": [{"subject": {"$ref": "subjects", "$id": subject1.insertedId},  "semester grade": 42, "exam grade": 25, "grade": 67}]},
 {"name": {"first": "Богдан", "last": "Короткевич"}, "age": 20, "cathedra": {"$ref": "cathedras", "$id": cathedra1.insertedId}, "group": "Група2", "languages": [ "українська", "англійська", "іспанська"], "year of entry": 2020, "study_program": {"$ref": "study_programs", "$id": study_program1.insertedId}, "grades": [{"subject": {"$ref": "subjects", "$id": subject1.insertedId},  "semester grade": 60, "exam grade": 40, "grade": 100}]},
